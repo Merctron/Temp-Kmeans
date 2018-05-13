@@ -25,7 +25,6 @@ GINF_CONFIG = {
     ]
 }
 
-config = kmeans.KmeansConfig(GINF_CONFIG['diff_cols'], 
-  GINF_CONFIG['diff_labels'], 1)
+config = kmeans.KmeansConfig(GINF_CONFIG['diff_cols'], GINF_CONFIG['diff_labels'], 1)
 kmeansObj = kmeans.Kmeans(config, 10, ginf)
 kmeansObj.cluster()
