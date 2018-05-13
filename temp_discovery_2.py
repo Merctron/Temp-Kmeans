@@ -32,5 +32,5 @@ GINF_CONFIG = {
 }
 
 config = kmeans.KmeansConfig(GINF_CONFIG['diff_cols'], GINF_CONFIG['diff_labels'], 0)
-kmeansObj = kmeans.Kmeans(config, 4, ginf)
+kmeansObj = kmeans.Kmeans(config, 4, df)
 kmeansObj.cluster()
